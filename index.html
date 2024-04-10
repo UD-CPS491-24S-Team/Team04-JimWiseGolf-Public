@@ -219,21 +219,21 @@
                     <h3>Scrum</h3>
                     <h2 class="section-title">Sprint Cycles</h2>
                 </div>
-                <div>
+                <div class="container">
                     <h2><u><strong>Sprint 1</strong></u></h2>
-                    <ul>
-                        <li>Setup local instances of EspoCRM on team members machines using the Xampp Software</li>
-                        <li>Customized the EspoCRM instances (and developed documentation) for:</li>
-                        <ul>
-                            <li>Company Logo and Theme</li>
-                            <li>Additional Instructor Accounts</li>
-                            <li>Programs & Lessons Datatables</li>
-                            <li>Students & Parents Datatables</li>
-                            <li>Navbar Customization</li>
-                            <li>Customizable Entity Fields</li>
-                        </ul>
-                        <li>Configured our Jira Task Board for direction into our three sprint cycles</li>
-                    </ul>
+                    <div class="content">
+                        <div>Setup local instances of EspoCRM on team members machines using the Xampp Software</div>
+                        <div>Configured our Jira Task Board for direction into our three sprint cycles</div>
+                        <div>Customized the EspoCRM instances (and developed documentation) for:</div>
+                        <div class="sub-list">
+                            <div>• Company Logo and Theme</div>
+                            <div>• Additional Instructor Accounts</div>
+                            <div>• Programs & Lessons Datatables</div>
+                            <div>• Students & Parents Datatables</div>
+                            <div>• Navbar Customization</div>
+                            <div>• Customizable Entity Fields</div>
+                        </div>
+                    </div>
                     <br>
                     <div class="video-container">
                         <video controls>
@@ -243,16 +243,16 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="container">
                 <h2><u><strong>Sprint 2</strong></u></h2>
-                <ul>
-                    <li>Setup a hosted Virtual Private Server with EspoCRM using the LAMP Infrastructure (Linux, Apache, MySQL, and PHP)</li>
-                    <li>Transferred our local customizations into the hosted EspoCRM instance</li>
-                    <li>Adjusted the Apache Server Webpage to connect using HTTPS with SSL Certification</li>
-                    <li>Initialized the VPS with the correct packages and developed a secure MySQL Database that connects to EspoCRM</li>
-                    <li>Created additional documentation for Theresa in order to properly use EspoCRM</li>
-                    <li>Began Data Sanitization to allow for quick and streamlined data processing into EspoCRM</li>
-                </ul>
+                <div class="content">
+                    <div>Setup a hosted Virtual Private Server with EspoCRM using the LAMP Infrastructure (Linux, Apache, MySQL, and PHP)</div>
+                    <div>Transferred our local customizations into the hosted EspoCRM instance</div>
+                    <div>Adjusted the Apache Server Webpage to connect using HTTPS with SSL Certification</div>
+                    <div>Initialized the VPS with the correct packages and developed a secure MySQL Database that connects to EspoCRM</div>
+                    <div>Created additional documentation for Theresa in order to properly use EspoCRM</div>
+                    <div>Began Data Sanitization to allow for quick and streamlined data processing into EspoCRM</div>
+                </div>
                 <br>
                 <div class="video-container" style="width: 100%; max-width: 1500px;">
                     <video controls style="width: 100%; height: auto;">
@@ -262,12 +262,20 @@
                 </div>
                 
             </div>
-            <div>
+            <div class = 'container'>
                 <h2><u><strong>Sprint 3</strong></u></h2>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
+                    <div class="content">
+                        <div>Gave access to the CRM to our client for initial impressions and testing</div>
+                        <div>Addressed questions the client had from their testing and further customized the CRM with their feedback</div>
+                        <div>Created Excel templates to give to the client so they can easily import data into the CRM</div>
+                        <div>Finished up documentation/user guides</div>
+                        <div>Transitioned to DevOps mode where we built bash scripts that:</div>
+                        <div class="sub-list">
+                            <div>• Install the CRM instance</div>
+                            <div>• Backup the database in case the application crashes</div>
+                            <div>• Reinstall the CRM from the lastest backup</div>
+                        </div>
+                    </div>
                 <br>
                 <div class="video-container">
                     <video controls>
@@ -373,3 +381,27 @@
 
 </body>
 </html>
+
+<style>
+.custom-list {
+    padding-left: 20px; /* Add left padding to create space for the "bullet" */
+}
+
+.custom-list-item {
+    margin-bottom: 5px; /* Add some spacing between items */
+}
+
+.sub-list {
+    padding-left: 20px; /* Indent nested lists */
+}
+.container {
+    width: 66.67%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+.content {
+    text-align: left; /* Adjust as needed for spacing from the left */
+}
+.sub-list {
+    padding-left: 40px; /* Double the padding to further indent the nested list */
+}
+</style>
